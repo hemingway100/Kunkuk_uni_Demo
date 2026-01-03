@@ -26,14 +26,15 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-full bg-primary-700 flex items-center justify-center text-white shadow-lg">
+            <div className="w-8 h-8 rounded-full bg-primary-700 flex items-center justify-center text-white shadow-lg shrink-0">
               <span className="material-icons-outlined text-sm">school</span>
             </div>
-            <span className={`font-medium tracking-tight transition-colors ${
+            <div className={`flex flex-col leading-tight transition-colors ${
               scrolled ? 'text-slate-900 dark:text-white' : 'text-white'
             }`}>
-              Konkuk University Glocal Campus
-            </span>
+              <span className="font-bold text-xs sm:text-sm tracking-tight">Konkuk University</span>
+              <span className="font-medium text-[9px] sm:text-[10px] opacity-80 uppercase tracking-widest">Global Campus</span>
+            </div>
           </div>
 
           <div className="flex items-center space-x-2 sm:space-x-4">
@@ -47,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode }) => {
                 {isDarkMode ? 'light_mode' : 'dark_mode'}
               </span>
             </button>
-            <button className={`px-5 py-2 rounded-full text-sm font-medium transition-all border ${
+            <button className={`px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all border ${
               scrolled 
               ? 'border-primary-700 text-primary-700 hover:bg-primary-50 dark:border-primary-500 dark:text-primary-500' 
               : 'border-white/40 text-white hover:bg-white/10'
