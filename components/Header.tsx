@@ -32,8 +32,8 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode }) => {
             <div className={`flex flex-col justify-center transition-colors ${
               scrolled ? 'text-slate-900 dark:text-white' : 'text-white'
             }`}>
-              <span className="font-bold text-[13px] sm:text-sm tracking-tight leading-none mb-1">Konkuk University</span>
-              <span className="font-medium text-[10px] sm:text-[11px] opacity-80 uppercase tracking-widest leading-none">Global Campus</span>
+              <span className="font-bold text-[12px] sm:text-sm tracking-tight leading-none mb-1">Konkuk University</span>
+              <span className="font-medium text-[9px] sm:text-[10px] opacity-80 uppercase tracking-[0.2em] leading-none">Global Campus</span>
             </div>
           </div>
 
