@@ -42,8 +42,8 @@ const Hero: React.FC = () => {
           </div>
           
           <p className="text-white/70 text-[13px] sm:text-base font-light leading-relaxed max-w-md mx-auto break-keep">
-            학우 여러분의 목소리에 귀 기울이며,<br className="sm:hidden"/> 함께 성장하는 캠퍼스를 만들어갑니다.<br className="hidden sm:block"/>
-            여러분의 소중한 대학 생활이 빛날 수 있도록<br className="sm:hidden"/> 이룸이 늘 곁에 있겠습니다.
+            학우 여러분의 목소리에 귀 기울이며, 함께 성장하는 캠퍼스를 만들어갑니다.
+            여러분의 소중한 대학 생활이 빛날 수 있도록 이룸이 늘 곁에 있겠습니다.
           </p>
         </div>
       </div>
